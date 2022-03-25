@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - directory: /
+    open-pull-requests-limit: 5
+    package-ecosystem: "npm"
+    rebase-strategy: auto
+    versioning-strategy: increase
+    schedule:
+      interval: daily
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+    labels:
+      - "dependencies"
+      - "chore"
+    reviewers:
+      - "penpow"

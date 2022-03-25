@@ -1,0 +1,41 @@
+{
+  "name": "cloudflare-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npm eslint . --ext .ts",
+    "lint:fix": "npm eslint . --ext .ts --fix",
+    "tsc": "npm tsc",
+    "tsc:watch": "npm tsc --watch",
+    "format": "prettier --config .prettierrc.json src/**/*.ts --write",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "cloudflare",
+    "cloudflare-sdk",
+    "cloudflare-api",
+    "cloudflare-api-node",
+    "cloudflare-api-nodejs",
+    "cloudflare-api-nodejs-sdk"
+  ],
+  "author": "Joshua Clements <josh@penpow.dev>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.11.0",
+    "eslint-config-marine": "^9.3.2",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "got": "^12.0.2",
+    "husky": "^7.0.4",
+    "prettier": "^2.6.1"
+  }
+}
